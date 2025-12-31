@@ -13,3 +13,7 @@ Hi sorry we haven't written the DIY kit instructions yet. However, if you order 
  `·.¸ `·  ¸.·´\`·¸)
      `\\´´\¸.·´
 ```
+
+## Calibration
+
+How to calibrate your Mom Jeans.

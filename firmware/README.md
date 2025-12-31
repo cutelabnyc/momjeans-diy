@@ -2,9 +2,14 @@
 
 The Mom Jeans DIY kit should come with a pre-programmed board, and so you shouldn't need to program it yourself. However, we provide the firmware binary here, in case you want to reprogram Mom Jeans yourself. If we release a firmware update, you can also use this same method to put the latest firmware code on your module.
 
-1. Mom Jeans is powered from the middle PCB, but the rear PCB has the STM32 chip that runs the firmware. This means that the two boards must be coonnected together for the STM32 to receive power. It's probably easiest to start with a fully assembled kit, but you will at least need to solder the 2x5 header and the two pairs of interconnects.
+1. Mom Jeans is powered from the middle PCB, but the rear PCB has the STM32 chip that runs the firmware. This means that the two boards must be connected together for the STM32 to receive power. It's probably easiest to start with a fully assembled kit, but you will at least need to solder the 2x5 header and the two pairs of interconnects.
 2. Connect the rear PCB to the middle PCB using the two interconnects.
 3. Hold down the small button on the corner of the rear PCB labeled BOOT, and connect Mom Jeans to Eurorack power using the 2x5 connector. If you don't have small fingers, it might help to use a small tool.
+
+![](../img/IMG_9265.jpg "The BOOT button, which should be held during power on to start the STM32 into the built-in bootloader for flashing.")
+
+![](../img/pushing-and-connecting.gif "Here's how we hold down the BOOT button while connecting power. It's not that hard if you have smaller fingers.")
+
 4. Connect Mom Jeans to your computer using the USB C connection. 
 5. If your computer asks you to allow the connection, click "Allow".
 6. Make sure you have the `dfu-util` command line utility installed. 
@@ -47,3 +52,5 @@ Submitting leave request...
 dfu-util: Error during download get_status
 ```
 
+9. Disconnect your module from Eurorack power.
+10. Reconnect the module to power. The Cadence LED should illuminate, and the Pitch Range button should toggle on/off when you press it. This indicates that the module has programmed successfully. From here, you should proceed to [Calibration](../README.md#calibration).
