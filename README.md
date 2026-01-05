@@ -1,5 +1,5 @@
 # momjeans-diy
-Mom Jeans DIY Kit Instructions
+These are the build instructions for the [Mom Jeans DIY kit](https://shop.cutelab.nyc/kits/mom-jeans-diy-kit/).
 
 ![](img/all_parts.jpeg)
 
@@ -65,7 +65,7 @@ The power header is the straight connector with 10 positions (two rows of five).
 ![](img/power_header.jpeg)
 ![](img/power_header_soldered.jpeg)
 
-### 5. Fit the pushbutton switches.
+### 4. Fit the pushbutton switches.
 
 > [!IMPORTANT]
 > Be careful of orientiaton! These switches include an LED, which has a polarity!
@@ -79,13 +79,13 @@ The switch should stay in place on their own, from the pressure of the pins. We 
 ![](img/switch_fitted_bad.jpeg)
 ![](img/switch_fitted_bottom.jpeg)
 
-### 6A. Prep the pots.
+### 5A. Prep the pots.
 
 First, remove any washers and nuts that may be screwed onto the pots.
 
 On the potentiometer, there may be a small stability pin on top. If so, use a pair of pliers to trim it off.  Make sure it's entirely removed, so the panel can sit flat against the pot. Otherwise it can cause other components to be mis-aligned.
 
-### 6B. Fit the pots.
+### 5B. Fit the pots.
 
 The potentiometers have five pins. The three pins in a row are the ones used for the circuit (the resistance between the pins changes as the pot is turned). The two kinked pins are "mounting" pins, used for physical stability and grounding. If the mounting pins aren't soldered, the pot could cause buzzing every time it's touched.
 
@@ -93,7 +93,7 @@ A small amount force may be necessary when inserting the pot. This is because th
 
 As with the button, you can solder one leg of each pot if you like. However, do not solder all pins until later (when the panel is added), or they could turn out very crooked.
 
-### 7. Fit the jacks.
+### 6. Fit the jacks.
 
 The jacks have three pins. The two smaller pins on the body of the jack fit into the pins in the white box indiicated on the PCB. The longer pin fits into the nearby square hole. When inserting the jack, we find it's easiest to insert the longer pin first, since it has more flexibility.
 
@@ -101,7 +101,7 @@ This part can be a little tricky, because the jacks fit loosely. You might be te
 
 The two shrouded pin headers should allow you to lay the PCB flat on the table while you insert the jacks.
 
-### 8. Fit the LED.
+### 7. Fit the LED.
 
 > [!IMPORTANT]
 > Be careful of LED orientation!
@@ -136,13 +136,13 @@ With nuts fitted, you can flip over the PCB, allowing the LED to fall into place
 
 ![](img/back_soldered.jpeg)
 
-### 12A. Fit the knobs.
+### 10A. Fit the knobs.
 
 The pots are D-shaft, so you simply need to press down on the knobs to fit them. There is only one knob with a "skirt", which is used for the Density control.
 
 ![](img/knobs_nocaps_skirt.jpeg)
 
-### 12B. Add the caps to the knobs.
+### 10B. Add the caps to the knobs.
 
 First, turn the knobs fully counterclockwise, to where they can't turn any further. Now, press the caps onto the knobs, pointed to the minimum position.
 
@@ -150,9 +150,10 @@ There are small divets in the body of the knob. The indicator on the knob must p
 
 ![](img/knob_caps.jpeg)
 
-## Work in Progress!!!
+### 11. Program the module (not necessary for kits).
 
-Hi sorry we haven't written the DIY kit instructions yet. However, if you order a kit, we promise the instructions will be done by the time your kit arrives.
+> [!NOTE]
+> This is not necessary if you've purchased a kit, since we've already programmed it.
 
 ```
       /`·.¸
@@ -163,6 +164,7 @@ Hi sorry we haven't written the DIY kit instructions yet. However, if you order 
      `\\´´\¸.·´
 ```
 
-## Calibration
 
-How to calibrate your Mom Jeans.
+### 12. Calibrate the module (necessary).
+
+Once the module is assembled, the last step is to calibrate the knobs and inputs.
