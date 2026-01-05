@@ -134,7 +134,7 @@ With nuts fitted, you can flip over the PCB, allowing the LED to fall into place
 
 The pots are D-shaft, so you simply need to press down on the knobs to fit them. There is only one knob with a "skirt", which is used for the Density control.
 
-![](img/knobs_nocaps.jpeg)
+![](img/knobs_nocaps_skirt.jpeg)
 
 ### 12B. Add the caps to the knobs.
 
