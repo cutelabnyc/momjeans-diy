@@ -33,7 +33,8 @@ Your kit should contain:
 
 ### 1. Interconnect pin sockets.
 
-If the rear PCB is pre-soldered, so you can skip this step.
+> [!NOTE]
+> If the rear PCB is pre-soldered, so you can skip this step.
 
 Start with the smaller PCB and the two white pin sockets.
 
@@ -41,9 +42,9 @@ Both sides have a thin ridge in the plastic casing, but only one side has two th
 
 The pin sockets are locking, and have polarity. Those thin lines must fit into the black shrouded headers in step 3.
 
-Make sure the side with the two thin lines is facing towards the top of the PCB, where the USB connector is located.
+Make sure the side with the two thin lines is facing towards the top of the PCB.
 
-![](img/back_sockets.jpeg)
+![](img/back_sockets_arrows.jpeg)
 
 ### 2. Interconnect pin headers.
 
@@ -75,11 +76,12 @@ The switch also has one pin marked in blue, to show the internal LEDs polarity. 
 
 The switch should stay in place on their own, from the pressure of the pins. We recommend that you don't solder any pins until the panel is fitted, to make sure the button fits correctly.
 
+![](img/switch_fitted_bad.jpeg)
 ![](img/switch_fitted_bottom.jpeg)
 
 ### 6A. Prep the pots.
 
-First, remove any washers and nuts.
+First, remove any washers and nuts that may be screwed onto the pots.
 
 On the potentiometer, there may be a small stability pin on top. If so, use a pair of pliers to trim it off.  Make sure it's entirely removed, so the panel can sit flat against the pot. Otherwise it can cause other components to be mis-aligned.
 
@@ -92,6 +94,8 @@ A small amount force may be necessary when inserting the pot. This is because th
 As with the button, you can solder one leg of each pot if you like. However, do not solder all pins until later (when the panel is added), or they could turn out very crooked.
 
 ### 7. Fit the jacks.
+
+The jacks have three pins. The two smaller pins on the body of the jack fit into the pins in the white box indiicated on the PCB. The longer pin fits into the nearby square hole. When inserting the jack, we find it's easiest to insert the longer pin first, since it has more flexibility.
 
 This part can be a little tricky, because the jacks fit loosely. You might be tempted to solder a pin on each jack to keep them in place. Doing that will keep the jacks flush, but they can still be off-center. So it's best to avoid soldering them until the panel is added.
 
@@ -106,7 +110,9 @@ LEDs have a polarity, and will not work if connected backwards. Luckily, they wo
 
 The cathode of the LED should be placed in the square hole on the PCB.
 
-LEDs have multiple polarity markings, which are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
+The 3mm LEDs that we use have multiple polarity markings. These are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
+
+![](img/led_fitted.jpeg)
 
 ### 8. Fit the panel.
 
