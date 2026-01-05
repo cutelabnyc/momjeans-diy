@@ -93,7 +93,11 @@ A small amount force may be necessary when inserting the pot. This is because th
 
 As with the button, you can solder one leg of each pot if you like. However, do not solder all pins until later (when the panel is added), or they could turn out very crooked.
 
-### 6. Fit the jacks.
+### 6. Fit the toggle switches.
+
+These toggle switches have no polarity.
+
+### 7. Fit the jacks.
 
 The jacks have three pins. The two smaller pins on the body of the jack fit into the pins in the white box indiicated on the PCB. The longer pin fits into the nearby square hole. When inserting the jack, we find it's easiest to insert the longer pin first, since it has more flexibility.
 
@@ -101,7 +105,7 @@ This part can be a little tricky, because the jacks fit loosely. You might be te
 
 The two shrouded pin headers should allow you to lay the PCB flat on the table while you insert the jacks.
 
-### 7. Fit the LED.
+### 8. Fit the LED.
 
 > [!IMPORTANT]
 > Be careful of LED orientation!
@@ -114,7 +118,7 @@ The 3mm LEDs that we use have multiple polarity markings. These are show in our 
 
 ![](img/led_fitted.jpeg)
 
-### 8. Fit the panel.
+### 9. Fit the panel.
 
 This is probably the hardest part of the build. To make sure that everything lines up perfectly, you want to fit the panel while all the components are still loose. To do this, keep the PCB and panel parallel to the ground. Place the panel over the components, and press down with your thumbs while holding the PCB in place with your other fingers.
 
@@ -130,19 +134,19 @@ Once the panel is in place, add nuts for a few of the jacks and for the truncate
 ![](img/panel_fitted_nuts.jpeg)
 
 
-### 9. Solder the controls, jacks, and LED.
+### 10. Solder the controls, jacks, and LED.
 
 With nuts fitted, you can flip over the PCB, allowing the LED to fall into place. Before soldering, make sure each LED is fully seated in its hole.
 
 ![](img/back_soldered.jpeg)
 
-### 10A. Fit the knobs.
+### 11A. Fit the knobs.
 
 The pots are D-shaft, so you simply need to press down on the knobs to fit them. There is only one knob with a "skirt", which is used for the Density control.
 
 ![](img/knobs_nocaps_skirt.jpeg)
 
-### 10B. Add the caps to the knobs.
+### 11B. Add the caps to the knobs.
 
 First, turn the knobs fully counterclockwise, to where they can't turn any further. Now, press the caps onto the knobs, pointed to the minimum position.
 
@@ -150,7 +154,7 @@ There are small divets in the body of the knob. The indicator on the knob must p
 
 ![](img/knob_caps.jpeg)
 
-### 11. Program the module (not necessary for kits).
+### 12. Program the module (not necessary for kits).
 
 > [!NOTE]
 > This is not necessary if you've purchased a kit, since we've already programmed it.
@@ -165,6 +169,6 @@ There are small divets in the body of the knob. The indicator on the knob must p
 ```
 
 
-### 12. Calibrate the module (necessary).
+### 13. Calibrate the module (necessary).
 
 Once the module is assembled, the last step is to calibrate the knobs and inputs.
