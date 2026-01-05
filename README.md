@@ -56,9 +56,13 @@ Before soldering, push them onto the sockets on the bottom board. This will ensu
 
 ### 3. Solder the power header.
 
+> [!IMPORTANT]
+> Make sure to solder the pin header on the correct side.
+
 The power header is the straight connector with 10 positions (two rows of five). The pins are spaced 2.54mm apart.
 
-![](img/IMG_3486.png)
+![](img/power_header.jpeg)
+![](img/power_header_soldered.jpeg)
 
 ### 5. Fit the pushbutton switches.
 
@@ -71,7 +75,7 @@ The switch also has one pin marked in blue, to show the internal LEDs polarity. 
 
 The switch should stay in place on their own, from the pressure of the pins. We recommend that you don't solder any pins until the panel is fitted, to make sure the button fits correctly.
 
-![](img/IMG_3461_combo.png)
+![](img/switch_fitted_bottom.jpeg)
 
 ### 6A. Prep the pots.
 
@@ -108,9 +112,7 @@ The cathode of the LED should be placed in the square hole on the PCB.
 
 LEDs have multiple polarity markings, which are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
 
-![](img/IMG_3477.png)
 
-![](img/IMG_3473.png)
 
 ### 8. Fit the panel.
 
@@ -118,20 +120,21 @@ This is probably the hardest part of the build. To make sure that everything lin
 
 Once the panel is at least partially in place, you should be able to hold the panel and PCB together with once hand. Then you can use your other hand to nudge all the components into place.
 
-Once you do, add nuts for a few of the jacks and for the truncate potentiometer. This will be enough to hold everything in place.
-
-
 The panel holes are a bit tight for the "round" and "free" toggle switches. Don't be afraid to use some force to push the panel into place. It should rest flatly across all the jacks.
 
-![](img/IMG_3479.png)
+![](img/controls_fitted.jpeg)
+![](img/panel_fitted.jpeg)
 
-![](img/IMG_3481.png)
+Once the panel is in place, add nuts for a few of the jacks and for the truncate potentiometer. This will be enough to hold everything in place. We recommend these specific nuts:
+
+![](img/panel_fitted_nuts.jpeg)
+
 
 ### 9. Solder the controls, jacks, and LED.
 
 With nuts fitted, you can flip over the PCB, allowing the LED to fall into place. Before soldering, make sure each LED is fully seated in its hole.
 
-![](img/IMG_3485.png)
+![](img/back_soldered.jpeg)
 
 ### 12A. Fit the knobs.
 
