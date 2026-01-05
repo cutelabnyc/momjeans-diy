@@ -1,6 +1,8 @@
 # momjeans-diy
 Mom Jeans DIY Kit Instructions
 
+![](img/all_parts.jpeg)
+
 Your kit should contain:
 
 - 1x PCB "mcu" layer
@@ -26,6 +28,7 @@ Your kit should contain:
 > [!NOTE]
 > The rear PCB (the little one) may come with the locking pin sockets pre-soldered. If so, you won't find it in the parts bag.
 
+
 ## Building
 
 ### 1. Interconnect pin sockets.
@@ -34,27 +37,22 @@ If the rear PCB is pre-soldered, so you can skip this step.
 
 Start with the smaller PCB and the two white pin sockets.
 
-![](img/IMG_3442_comb.png)
-
 Both sides have a thin ridge in the plastic casing, but only one side has two thin lines in the ridge.
 
 The pin sockets are locking, and have polarity. Those thin lines must fit into the black shrouded headers in step 3.
 
 Make sure the side with the two thin lines is facing towards the top of the PCB, where the USB connector is located.
 
-![](img/IMG_3444_combo.png)
+![](img/back_sockets.jpeg)
 
 ### 2. Interconnect pin headers.
 
 Next, take the two black shrouded pin headers.
 
-![](img/IMG_3455.png)
+Before soldering, push them onto the sockets on the bottom board. This will ensure the PCBs are properly aligned.
 
-To ensure they fit correctly, connect them to the bottom board before soldering.
-
-![](img/IMG_3457.png)
-
-![](img/IMG_3459.png)
+![](img/headers_on_sockets.jpeg)
+![](img/headers_on_sockets_arrows.jpeg)
 
 ### 3. Solder the power header.
 
