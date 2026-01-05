@@ -91,15 +91,11 @@ A small amount force may be necessary when inserting the pot. This is because th
 
 As with the button, you can solder one leg of each pot if you like. However, do not solder all pins until later (when the panel is added), or they could turn out very crooked.
 
-![](img/IMG_3470.png)
-
 ### 7. Fit the jacks.
 
 This part can be a little tricky, because the jacks fit loosely. You might be tempted to solder a pin on each jack to keep them in place. Doing that will keep the jacks flush, but they can still be off-center. So it's best to avoid soldering them until the panel is added.
 
 The two shrouded pin headers should allow you to lay the PCB flat on the table while you insert the jacks.
-
-![](img/IMG_3471.png)
 
 ### 8. Fit the LED.
 
@@ -111,8 +107,6 @@ LEDs have a polarity, and will not work if connected backwards. Luckily, they wo
 The cathode of the LED should be placed in the square hole on the PCB.
 
 LEDs have multiple polarity markings, which are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
-
-
 
 ### 8. Fit the panel.
 
@@ -140,11 +134,15 @@ With nuts fitted, you can flip over the PCB, allowing the LED to fall into place
 
 The pots are D-shaft, so you simply need to press down on the knobs to fit them. There is only one knob with a "skirt", which is used for the Density control.
 
+![](img/knobs_nocaps.jpeg)
+
 ### 12B. Add the caps to the knobs.
 
 First, turn the knobs fully counterclockwise, to where they can't turn any further. Now, press the caps onto the knobs, pointed to the minimum position.
 
 There are small divets in the body of the knob. The indicator on the knob must point between the divets.
+
+![](img/knob_caps.jpeg)
 
 ## Work in Progress!!!
 
