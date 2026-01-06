@@ -157,7 +157,7 @@ There are small divets in the body of the knob. The indicator on the knob must p
 ### 12. Program the module (not necessary for kits).
 
 > [!NOTE]
-> This is not necessary if you've purchased a kit, since we've already programmed it.
+> This is not necessary if you've purchased a kit, since we've already programmed it. Enjoy this fish instead.
 
 ```
       /`·.¸
@@ -168,7 +168,79 @@ There are small divets in the body of the knob. The indicator on the knob must p
      `\\´´\¸.·´
 ```
 
+## Testing and Calibration
 
-### 13. Calibrate the module (necessary).
+Watch a video guide to testing and calibrating Mom Jeans here https://www.youtube.com/watch?v=lJyIIlp4eNk.
 
-Once the module is assembled, the last step is to calibrate the knobs and inputs.
+### 1. Sanity Check
+
+Once you've finished building the module, the first thing to do is connect it to Eurorack power and do a quick sanity check. Before the module has been calibrated, it should still have some basic functionality. The cadence LED should illuminate, and the pitch range button (the button on top of the module) should turn on when you press it. If those things are true, then the module is at least basically functional, and you're ready to move on to calibration and testing.
+
+### 2. Calibration
+
+In calibration, we send a known signal (typically +5 or -5 volts) to the CV inputs on Mom Jeans, so it can learn exactly what digital values correspond to these voltages. In order to calibrate Mom Jeans, you will need access to a source of a known +5 volt and -5 volt signal. We use [Expert Sleepers Disting](https://www.expert-sleepers.co.uk/disting.html) for this, though you should make sure that module is itself calibrated before using it for calibration. For testing, it will also be helpful to have one or two LFOs or other sources of CV signals.
+
+Access calibration mode on Mom Jeans by pressing and holding the small calibration button on the rear PCB board.
+
+![](img/calibrate.jpeg)
+
+After pressing and holding this button for one seecond, the pitch range button and cadence LED will start to flash slowly. This means that the module is in calibration mode. There are three calibration modes, which you can cycle through by pressing (not holding) the calibration button. In mode 1, the LEDs will flash once. In mode 2, the LEDs will flash twice, and in mode 3 the LEDs will blink three times. Press the calibrate button one last time to save the current calibration and return to normal module operation.
+
+The three calibration modes differ in what each CV input is expecting to receive.
+- Mode 1: CV inputs are not expecting any kind of signal. They are simply taking a reading of a disconnected state, and recording the digital value that corresponds to zero volts.
+- Mode 2: CV inputs are expecting either a 5 volt or a -5 volt input. When the module receives one of these signals, it will records the digital value, so that other inputs can be scaled relative to that known value.
+- Mode 3: CV inputs are expecting to receive a 0 volt signal, followed by a signal at 1 volt, 2 volts, 3 volts, in steps up to 8 volts. Then, the input will expect a signal starting a 0 volts and going down to -1 volts, -2 volts, all the way down to -8 volts. This calibration mode is normally not necessary, and you only need it if mode 2 does not give you a sufficiently precise calibration.
+
+> [!NOTE]
+> You can clear all calibration values by pressing and holding the calibrate button while in any calibration mode. The LEDs will blink in an alternating pattern to indicate that calibration has been erased. After erasing the current calibration, the module will leave calibration mode and be in an uncalibrated state.
+
+### 3. Performing a Calibration
+
+1. Make sure no inputs are connected to Mom Jeans. You may want to disconnect audio outputs as well, since the output will not be pleasant to listen to.
+2. Press and hold the calibration button to enter calibration mode one. You should see the LEDs blinking slowly.
+3. Pesss the button again to enter calibration mode two.
+4. Turn all the potentiometers to their lowest value, and then to their highest value.
+5. Toggle the state of both toggles (quantization and coupling toggles).
+6. Set your known voltage source to +5 volts. Connect this voltage source first to the v/oct input, then the linear FM input, and finally the FM index input.
+7. Disconnect the known voltage source.
+8. Now set your known voltage source to -5 volts. Connect this voltage source first to the v/oct input, then the linear FM input, and finally the FM index input.
+9. Press the calibration button once more to go to calibration mode three.
+10. Press the calibration button one last time to exit calibration mode. This will save the calibration data, and the module should now be calibrated.
+
+### 3a. Performing Precise Calibration
+
+Usually calibrating to +5 and -5 volts is sufficient. If in testing your v/oct input does not seem as precise as you would like, you can use calibration mode 3 to record a precise value for each voltage level.
+
+1. Make sure no inputs are connected to Mom Jeans. You may want to disconnect audio outputs as well, since the output will not be pleasant to listen to.
+2. Press and hold the calibration button to enter calibration mode one. You should see the LEDs blinking slowly.
+3. Pesss the button again to enter calibration mode two.
+4. Pesss the button again to enter calibration mode three.
+5. Set your known voltage source to zero volts.
+6. Connect this source to the v/oct input.
+7. Step the known voltage source in one-volt increments up to +8 volts.
+8. Disconnect this source.
+9. Set your known voltage source to zero volts.
+10. Connect this source to the v/oct input.
+11. Step the known voltage source down in one-volt increments to -8 volts.
+12. Disconnect this source.
+13. Optionally, repeat for the linear FM and FM index inputs.
+14. Press the calibration button one last time to exit calibration mode. This will save the calibration data, and the module should now be calibrated.
+
+### 4. Testing
+
+The goal with testing is to make sure that all potentiometers, toggles, buttons, and jacks are connected properly.
+
+1. Connect Mom Jeans to Eurorack power.
+2. Turn all pots to the minimum value, flip both toggles to the up (deactivated) positiion.
+3. Connect the pulsar output to an audio output so you can hear it.
+4. Turn the potentiometers one at a time. Each should have an appropriate effect on the signal. Note that the torque potentiometer will not create an audible effect unless the cadence knob is turned up somewhat.
+5. Flip each of the quantization and coupling toggles. These should affect the rate of the cadence LED, and should also produce an audible result.
+6. Take any CV source and connect it to each of the density, torque, cadence, and shape inputs. Each should affect the sound.
+7. Press the pitch range button. Pitch should change audibly, and the button should illuminate.
+8. Connect a 1 volt source to the v/oct input. The pitch should go up by one octave. Repeat with two, three, or other desired voltages. Note that the highest pitch that Mom Jeans can produce is not that high, so beyond three octaves up you may hear distortion. This is normal.
+9. If you are not happy with the tuning, see [Performing Precise Calibration](#performing-precise-calibration).
+10. Connect a 1 volt source to the linear FM input. Pitch should go up by one fifth. Connect a 2 volt source. Pitch should go up by one octave.
+11. Connect a varying CV source to linear FM input, then connect another CV source to FM index. The range of frequency modulations should be proportional to the CV value at the FM index input.
+12. Connect an oscillator input to the sync input (square waves work particularly well). You should hear a click on leading edges, and a timbral change at high frequencies.
+13. Finally, connect the square output to an audio output. You should hear a square wave.
+14. That's it! If you've made it this far and everything seems to be working, you should celebrate. We recommend the finest French champagne.
