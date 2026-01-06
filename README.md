@@ -114,7 +114,7 @@ LEDs have a polarity, and will not work if connected backwards. Luckily, they wo
 
 The cathode of the LED should be placed in the square hole on the PCB.
 
-The 3mm LEDs that we use have multiple polarity markings. These are show in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
+The 3mm LEDs that we use have multiple polarity markings. These are shown in our [LED Polarity Guide](img/led-polarity-diagram-20240328-2.png). Here's the same info in text form: the flat side of of the casing marks the cathode. The shorter leg also marks the cathode. VERY rarely, an LED is made incorrectly and these don't line up. In that case, you'll need to look at the Anvil and Post inside the case/lens to confirm the polarity.
 
 ![](img/led_fitted.jpeg)
 
