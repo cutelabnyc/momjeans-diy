@@ -202,10 +202,13 @@ The three calibration modes differ in what each CV input is expecting to receive
 4. Turn all the potentiometers to their lowest value, and then to their highest value.
 5. Toggle the state of both toggles (quantization and coupling toggles).
 6. Set your known voltage source to +5 volts. Connect this voltage source first to the v/oct input, then the linear FM input, and finally the FM index input.
+> [!NOTE]
+> There will be no feedback from the module to indicate that a voltage was registered successfully. Just connect the voltage to each input for half a second or so, then move to the next input. You'll be able to verify that calibration was successful later when you listen to the output. If callibration was not successful, you can run calibration again.
 7. Disconnect the known voltage source.
 8. Now set your known voltage source to -5 volts. Connect this voltage source first to the v/oct input, then the linear FM input, and finally the FM index input.
 9. Press the calibration button once more to go to calibration mode three.
 10. Press the calibration button one last time to exit calibration mode. This will save the calibration data, and the module should now be calibrated.
+11. To validate calibration, see [testing](#testing).
 
 ### 3a. Performing Precise Calibration
 
@@ -225,6 +228,7 @@ Usually calibrating to +5 and -5 volts is sufficient. If in testing your v/oct i
 12. Disconnect this source.
 13. Optionally, repeat for the linear FM and FM index inputs.
 14. Press the calibration button one last time to exit calibration mode. This will save the calibration data, and the module should now be calibrated.
+15. To validate calibration, see [testing](#testing).
 
 ### 4. Testing
 
